@@ -1,43 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:fruitset/profile.dart';
+import 'package:fruitset/splash.dart';
+import 'about.dart';
+import 'bottombanigation.dart';
+import 'home.dart';
 
-void main() {
+void main() {  // Entry point of application
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter',
+      home: Splash(),
     );
   }
 }
 
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
 
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title:Center(child: Text("Home")),
-      ),
-      body: Center(child: Text("This is body"),)
-    );
-  }
-}
+
+
+
+
+
+
+
+
 
 
